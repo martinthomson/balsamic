@@ -165,9 +165,9 @@ Table of Contents
    clarifying key word usage [IESG-KW] takes special effort to identify
    some of these inappropriate uses.
 
-   Use of "SHOULD" is almost always phrased in less ambiguous terms, by
-   defining the preferred behaviour, and the conditions where it is
-   acceptable to deviate from that practice.
+   Use of "SHOULD" is almost always better phrased in less ambiguous
+   terms, by defining the preferred behaviour, and the conditions where
+   it is acceptable to deviate from that practice.
 
    In many cases, "SHOULD" is used to cover deliberate ambiguity in
    specifications where agreement on specifics could not be reached.  A
