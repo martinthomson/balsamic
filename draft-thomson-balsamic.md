@@ -139,7 +139,7 @@ such as to mandate the generation of a fatal error --
 the prohibition is both more effective and more fully defined.
 
 
-# Weaselly Language
+# Ambiguous Language: SHOULD and RECOMMENDED
 
 "SHOULD", its synonym "RECOMMENDED",
 and its antonym "SHOULD NOT",
