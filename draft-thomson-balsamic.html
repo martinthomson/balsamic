@@ -5,15 +5,19 @@
 <meta content="Common,Latin" name="scripts">
 <meta content="initial-scale=1.0" name="viewport">
 <title>Simplified Language for Specifying Interoperability</title>
-<meta content="Your Name Here" name="author">
-<meta content="
-       TODO Abstract 
-    " name="description">
+<meta content="Martin Thomson" name="author">
+<meta content='
+       The key words used to establish interoperability requirements,
+can be reduced to a single key word, "MUST".
+All others are either redundant
+or cover for latent interoperability issues
+and can be discouraged. 
+    ' name="description">
 <meta content="xml2rfc 3.29.0" name="generator">
 <meta content="next generation" name="keyword">
 <meta content="unicorn" name="keyword">
 <meta content="sparkling distributed ledger" name="keyword">
-<meta content="draft-todo-yourname-protocol-latest" name="ietf.draft">
+<meta content="draft-thomson-balsamic-latest" name="ietf.draft">
 <!-- Generator version information:
   xml2rfc 3.29.0
     Python 3.12.11
@@ -1049,7 +1053,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <td class="right">July 2025</td>
 </tr></thead>
 <tfoot><tr>
-<td class="left">Here</td>
+<td class="left">Thomson</td>
 <td class="center">Expires 13 January 2026</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
@@ -1058,9 +1062,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <div id="internal-metadata" class="document-information">
 <dl id="identifiers">
 <dt class="label-workgroup">Workgroup:</dt>
-<dd class="workgroup">WG Working Group</dd>
+<dd class="workgroup">Network Working Group</dd>
 <dt class="label-internet-draft">Internet-Draft:</dt>
-<dd class="internet-draft">draft-todo-yourname-protocol-latest</dd>
+<dd class="internet-draft">draft-thomson-balsamic-latest</dd>
+<dt class="label-obsoletes">Obsoletes:</dt>
+<dd class="obsoletes">
+<a href="https://www.rfc-editor.org/rfc/rfc2119" class="eref">2119</a>, <a href="https://www.rfc-editor.org/rfc/rfc8714" class="eref">8714</a> (if approved)</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
 <time datetime="2025-07-12" class="published">12 July 2025</time>
@@ -1072,7 +1079,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dt class="label-authors">Author:</dt>
 <dd class="authors">
 <div class="author">
-      <div class="author-name">Y. N. Here</div>
+      <div class="author-name">M. Thomson</div>
 <div class="org">Mozilla</div>
 </div>
 </dd>
@@ -1081,7 +1088,11 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <h1 id="title">Simplified Language for Specifying Interoperability</h1>
 <section id="section-abstract">
       <h2 id="abstract"><a href="#abstract" class="selfRef">Abstract</a></h2>
-<p id="section-abstract-1">TODO Abstract<a href="#section-abstract-1" class="pilcrow">¶</a></p>
+<p id="section-abstract-1">The key words used to establish interoperability requirements,
+can be reduced to a single key word, "MUST".
+All others are either redundant
+or cover for latent interoperability issues
+and can be discouraged.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
 </section>
 <section class="note rfcEditorRemove" id="section-note.1">
       <h2 id="name-about-this-document">
@@ -1089,14 +1100,10 @@ svg :is([fill="white"], [fill^="#fff"]) {
       </h2>
 <p id="section-note.1-1">This note is to be removed before publishing as an RFC.<a href="#section-note.1-1" class="pilcrow">¶</a></p>
 <p id="section-note.1-2">
-        The latest revision of this draft can be found at <span><a href="https://example.com/LATEST">https://example.com/LATEST</a></span>.
-        Status information for this document may be found at <span><a href="https://datatracker.ietf.org/doc/draft-todo-yourname-protocol/">https://datatracker.ietf.org/doc/draft-todo-yourname-protocol/</a></span>.<a href="#section-note.1-2" class="pilcrow">¶</a></p>
-<p id="section-note.1-3">
-        Discussion of this document takes place on the
-        WG Working Group mailing list (<span><a href="mailto:WG@example.com">mailto:WG@example.com</a></span>),
-        which is archived at <span><a href="https://example.com/WG">https://example.com/WG</a></span>.<a href="#section-note.1-3" class="pilcrow">¶</a></p>
-<p id="section-note.1-4">Source for this draft and an issue tracker can be found at
-        <span><a href="https://github.com/USER/REPO">https://github.com/USER/REPO</a></span>.<a href="#section-note.1-4" class="pilcrow">¶</a></p>
+        The latest revision of this draft can be found at <span><a href="https://martinthomson.github.io/balsamic/draft-thomson-balsamic.html">https://martinthomson.github.io/balsamic/draft-thomson-balsamic.html</a></span>.
+        Status information for this document may be found at <span><a href="https://datatracker.ietf.org/doc/draft-thomson-balsamic/">https://datatracker.ietf.org/doc/draft-thomson-balsamic/</a></span>.<a href="#section-note.1-2" class="pilcrow">¶</a></p>
+<p id="section-note.1-3">Source for this draft and an issue tracker can be found at
+        <span><a href="https://github.com/martinthomson/balsamic">https://github.com/martinthomson/balsamic</a></span>.<a href="#section-note.1-3" class="pilcrow">¶</a></p>
 </section>
 <div id="status-of-memo">
 <section id="section-boilerplate.1">
@@ -1150,19 +1157,16 @@ svg :is([fill="white"], [fill^="#fff"]) {
             <p id="section-toc.1-1.1.1" class="keepWithNext"><a href="#section-1" class="auto internal xref">1</a>.  <a href="#name-introduction" class="internal xref">Introduction</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.2">
-            <p id="section-toc.1-1.2.1"><a href="#section-2" class="auto internal xref">2</a>.  <a href="#name-redundant-keywords" class="internal xref">Redundant Keywords</a></p>
+            <p id="section-toc.1-1.2.1"><a href="#section-2" class="auto internal xref">2</a>.  <a href="#name-redundant-key-words" class="internal xref">Redundant Key Words</a></p>
 <ul class="compact toc ulBare ulEmpty">
 <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.2.2.1">
-                <p id="section-toc.1-1.2.2.1.1" class="keepWithNext"><a href="#section-2.1" class="auto internal xref">2.1</a>.  <a href="#name-shall" class="internal xref">SHALL</a></p>
+                <p id="section-toc.1-1.2.2.1.1" class="keepWithNext"><a href="#section-2.1" class="auto internal xref">2.1</a>.  <a href="#name-shall-and-required" class="internal xref">SHALL and REQUIRED</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.2.2.2">
-                <p id="section-toc.1-1.2.2.2.1" class="keepWithNext"><a href="#section-2.2" class="auto internal xref">2.2</a>.  <a href="#name-required" class="internal xref">REQUIRED</a></p>
+                <p id="section-toc.1-1.2.2.2.1" class="keepWithNext"><a href="#section-2.2" class="auto internal xref">2.2</a>.  <a href="#name-may-and-optional" class="internal xref">MAY and OPTIONAL</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.2.2.3">
-                <p id="section-toc.1-1.2.2.3.1"><a href="#section-2.3" class="auto internal xref">2.3</a>.  <a href="#name-may-and-optional" class="internal xref">MAY and OPTIONAL</a></p>
-</li>
-              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.2.2.4">
-                <p id="section-toc.1-1.2.2.4.1"><a href="#section-2.4" class="auto internal xref">2.4</a>.  <a href="#name-negations" class="internal xref">Negations</a></p>
+                <p id="section-toc.1-1.2.2.3.1"><a href="#section-2.3" class="auto internal xref">2.3</a>.  <a href="#name-negations" class="internal xref">Negations</a></p>
 </li>
             </ul>
 </li>
@@ -1208,83 +1212,80 @@ THese key words have formed the backbone of interoperable specifications
 in many fields,
 not just the IETF.<a href="#section-1-1" class="pilcrow">¶</a></p>
 <p id="section-1-2">These words and phrases represent part of the identity of the IETF.
-The list is also unnecessarily long.
-This note argues that a single keyword suffices: "MUST".<a href="#section-1-2" class="pilcrow">¶</a></p>
+The list is also unnecessarily long.<a href="#section-1-2" class="pilcrow">¶</a></p>
+<p id="section-1-3">This note argues that a single key word suffices: "MUST".<a href="#section-1-3" class="pilcrow">¶</a></p>
+<p id="section-1-4">The remainder of this document provides arguments
+for why all other key words are unnecessary.<a href="#section-1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="redundant-keywords">
+<div id="redundant-key-words">
 <section id="section-2">
-      <h2 id="name-redundant-keywords">
-<a href="#section-2" class="section-number selfRef">2. </a><a href="#name-redundant-keywords" class="section-name selfRef">Redundant Keywords</a>
+      <h2 id="name-redundant-key-words">
+<a href="#section-2" class="section-number selfRef">2. </a><a href="#name-redundant-key-words" class="section-name selfRef">Redundant Key Words</a>
       </h2>
 <p id="section-2-1">Most of the set of 10 key words or phrases used are strictly redundant
 with the term "MUST".<a href="#section-2-1" class="pilcrow">¶</a></p>
-<div id="shall">
+<div id="shall-and-required">
 <section id="section-2.1">
-        <h3 id="name-shall">
-<a href="#section-2.1" class="section-number selfRef">2.1. </a><a href="#name-shall" class="section-name selfRef">SHALL</a>
+        <h3 id="name-shall-and-required">
+<a href="#section-2.1" class="section-number selfRef">2.1. </a><a href="#name-shall-and-required" class="section-name selfRef">SHALL and REQUIRED</a>
         </h3>
-<p id="section-2.1-1">The term "SHALL" is defined to have the same definition as "MUST".
-This term has never been favoured relative to "MUST".
-Of the 803 documents published after RFC 9000,
+<p id="section-2.1-1">The terms "SHALL" and "REQUIRED" are defined to have the same definition as "MUST".<a href="#section-2.1-1" class="pilcrow">¶</a></p>
+<p id="section-2.1-2">Neither term has ever been favoured relative to "MUST".<a href="#section-2.1-2" class="pilcrow">¶</a></p>
+<p id="section-2.1-3">Of the 803 documents published after RFC 9000,
 644 of these cite BCP 14.
 Of these 644 documents,
 the word "MUST" appears 17,327 times,
 not including the quote from BCP 14.
-The word "SHALL" appears just 810 times.<a href="#section-2.1-1" class="pilcrow">¶</a></p>
-<p id="section-2.1-2">This ratio (~21.4) is lower than for the RFCs between 2501 and 3000 (~8),
-which suggests a decline in the popularity of "SHALL".<a href="#section-2.1-2" class="pilcrow">¶</a></p>
-<p id="section-2.1-3">As a perfect synonym of "MUST",
-it would be easy to stop using "SHALL" entirely.<a href="#section-2.1-3" class="pilcrow">¶</a></p>
-</section>
-</div>
-<div id="required">
-<section id="section-2.2">
-        <h3 id="name-required">
-<a href="#section-2.2" class="section-number selfRef">2.2. </a><a href="#name-required" class="section-name selfRef">REQUIRED</a>
-        </h3>
-<p id="section-2.2-1">The term "REQUIRED" is also defined to have the same meaning as "MUST".
-This word has become even less popular than "SHALL".
-Though usage in RFCs 2501 through 300 is almost the same as "SHALL",
-it appears just 490 times in recent documents.<a href="#section-2.2-1" class="pilcrow">¶</a></p>
-<p id="section-2.2-2">This word lends itself more to the use of passive voice,
+The word "SHALL" appears just 810 times.<a href="#section-2.1-3" class="pilcrow">¶</a></p>
+<p id="section-2.1-4">This ratio (~21.4) is lower than for the RFCs between 2501 and 3000 (~8),
+which suggests a decline in the popularity of "SHALL".<a href="#section-2.1-4" class="pilcrow">¶</a></p>
+<p id="section-2.1-5">As a perfect synonym of "MUST",
+it would be easy to stop using "SHALL" entirely.<a href="#section-2.1-5" class="pilcrow">¶</a></p>
+<p id="section-2.1-6">The term "REQUIRED" has become even less popular than "SHALL".
+Though frequency of usage in RFCs 2501 through 3000
+is close to that of "SHALL",
+it appears just 490 times in recent documents.<a href="#section-2.1-6" class="pilcrow">¶</a></p>
+<p id="section-2.1-7">This word lends itself more to the use of passive voice,
 which has gradually fallen out of favour in technical writing.
-This would be easier to retire than "SHALL".<a href="#section-2.2-2" class="pilcrow">¶</a></p>
+This would be easier to retire than "SHALL".<a href="#section-2.1-7" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="may-and-optional">
-<section id="section-2.3">
+<section id="section-2.2">
         <h3 id="name-may-and-optional">
-<a href="#section-2.3" class="section-number selfRef">2.3. </a><a href="#name-may-and-optional" class="section-name selfRef">MAY and OPTIONAL</a>
+<a href="#section-2.2" class="section-number selfRef">2.2. </a><a href="#name-may-and-optional" class="section-name selfRef">MAY and OPTIONAL</a>
         </h3>
-<p id="section-2.3-1">A "MAY" or "OPTIONAL" defines optional behaviour.<a href="#section-2.3-1" class="pilcrow">¶</a></p>
-<p id="section-2.3-2">On the face of it, this might seem necessary.
+<p id="section-2.2-1">A "MAY" or "OPTIONAL" define optional behaviour.<a href="#section-2.2-1" class="pilcrow">¶</a></p>
+<p id="section-2.2-2">On the face of it, these might seem necessary.
 In defining interoperability,
-every "MAY" for one actor
-is a "MUST" for every other actor.
-For instance, if a field in a message is optionally present,
-every recipient of that message MUST tolerate its presence or absence equally.
+every option that one actor might exercise
+requires every other actor to support that choice.
+That is, every "MAY" for one is a "MUST" for others.<a href="#section-2.2-2" class="pilcrow">¶</a></p>
+<p id="section-2.2-3">For instance, if a field in a message is optionally present,
+every recipient of that message has to tolerate its presence or absence equally.
 It is therefore more precise to define requirements in terms of the mandatory behaviour
-of participants other than the one that can exercise choice.<a href="#section-2.3-2" class="pilcrow">¶</a></p>
+of participants other than the one that can exercise choice.<a href="#section-2.2-3" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="negations">
-<section id="section-2.4">
+<section id="section-2.3">
         <h3 id="name-negations">
-<a href="#section-2.4" class="section-number selfRef">2.4. </a><a href="#name-negations" class="section-name selfRef">Negations</a>
+<a href="#section-2.3" class="section-number selfRef">2.3. </a><a href="#name-negations" class="section-name selfRef">Negations</a>
         </h3>
-<p id="section-2.4-1">Negations include "MUST NOT", "SHALL NOT", and "SHOULD NOT".
+<p id="section-2.3-1">Negations include "MUST NOT", "SHALL NOT", and "SHOULD NOT".
 The undefined and confusing "MAY NOT" appears in several RFCs as well,
-as recently as RFC 9783.<a href="#section-2.4-1" class="pilcrow">¶</a></p>
-<p id="section-2.4-2">The inclusion of negations in key words is unnecessary.
+more early in the series,
+but also as recently as RFC 9783.<a href="#section-2.3-1" class="pilcrow">¶</a></p>
+<p id="section-2.3-2">The inclusion of negations in key words is unnecessary.
 Saying "MUST not do X" is equally comprehensible
-to the shoutier "MUST NOT do X".<a href="#section-2.4-2" class="pilcrow">¶</a></p>
-<p id="section-2.4-3">It is often better to phrase such statements positively,
-avoiding the negation entirely.
+to the shoutier "MUST NOT do X".<a href="#section-2.3-2" class="pilcrow">¶</a></p>
+<p id="section-2.3-3">It is often better to phrase such statements positively,
+avoiding the use of negation entirely.
 By specifying the expected reaction of other protocol participants
-to a forbidden action,
-which might be to generate fatal errors,
-the prohibition is both more effective and more fully defined.<a href="#section-2.4-3" class="pilcrow">¶</a></p>
+to a forbidden action --
+such as to mandate the generation of a fatal error --
+the prohibition is both more effective and more fully defined.<a href="#section-2.3-3" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
@@ -1294,9 +1295,10 @@ the prohibition is both more effective and more fully defined.<a href="#section-
       <h2 id="name-weaselly-language">
 <a href="#section-3" class="section-number selfRef">3. </a><a href="#name-weaselly-language" class="section-name selfRef">Weaselly Language</a>
       </h2>
-<p id="section-3-1">"SHOULD" and its synonyms and antonyms,
+<p id="section-3-1">"SHOULD", its synonym "RECOMMENDED",
+and its antonym "SHOULD NOT",
 like the phrases from RFC 6919 <span>[<a href="#EXTRA" class="cite xref">EXTRA</a>]</span>,
-is best avoided in protocol specifications.<a href="#section-3-1" class="pilcrow">¶</a></p>
+are best avoided in protocol specifications.<a href="#section-3-1" class="pilcrow">¶</a></p>
 <p id="section-3-2">The use of the term "SHOULD" is one of the most hotly debated
 and misused
 of the key words defined in BCP 14.
@@ -1392,11 +1394,11 @@ on the precision of the language used in specifications.<a href="#section-4-1" c
 <a href="#name-authors-address" class="section-name selfRef">Author's Address</a>
       </h2>
 <address class="vcard">
-        <div dir="auto" class="left"><span class="fn nameRole">Your Name Here</span></div>
+        <div dir="auto" class="left"><span class="fn nameRole">Martin Thomson</span></div>
 <div dir="auto" class="left"><span class="org">Mozilla</span></div>
 <div class="email">
 <span>Email:</span>
-<a href="mailto:your.email@example.com" class="email">your.email@example.com</a>
+<a href="mailto:mt@lowentropy.net" class="email">mt@lowentropy.net</a>
 </div>
 </address>
 </section>
