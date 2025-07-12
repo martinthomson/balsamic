@@ -5,7 +5,7 @@ category: info
 docname: draft-thomson-balsamic-latest
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
-replaces: 2119, 8714
+obsoletes: 2119, 8714
 date:
 consensus: true
 v: 3
@@ -43,8 +43,11 @@ informative:
 
 --- abstract
 
-TODO Abstract
-
+The key words used to establish interoperability requirements,
+can be reduced to a single key word, "MUST".
+All others are either redundant
+or cover for latent interoperability issues
+and can be discouraged.
 
 --- middle
 
@@ -59,19 +62,25 @@ not just the IETF.
 
 These words and phrases represent part of the identity of the IETF.
 The list is also unnecessarily long.
-This note argues that a single keyword suffices: "MUST".
+
+This note argues that a single key word suffices: "MUST".
+
+The remainder of this document provides arguments
+for why all other key words are unnecessary.
 
 
-# Redundant Keywords
+# Redundant Key Words
 
 Most of the set of 10 key words or phrases used are strictly redundant
 with the term "MUST".
 
 
-## SHALL
+## SHALL and REQUIRED
 
-The term "SHALL" is defined to have the same definition as "MUST".
-This term has never been favoured relative to "MUST".
+The terms "SHALL" and "REQUIRED" are defined to have the same definition as "MUST".
+
+Neither term has ever been favoured relative to "MUST".
+
 Of the 803 documents published after RFC 9000,
 644 of these cite BCP 14.
 Of these 644 documents,
@@ -85,12 +94,9 @@ which suggests a decline in the popularity of "SHALL".
 As a perfect synonym of "MUST",
 it would be easy to stop using "SHALL" entirely.
 
-
-## REQUIRED
-
-The term "REQUIRED" is also defined to have the same meaning as "MUST".
-This word has become even less popular than "SHALL".
-Though usage in RFCs 2501 through 300 is almost the same as "SHALL",
+The term "REQUIRED" has become even less popular than "SHALL".
+Though frequency of usage in RFCs 2501 through 3000
+is close to that of "SHALL",
 it appears just 490 times in recent documents.
 
 This word lends itself more to the use of passive voice,
@@ -100,14 +106,16 @@ This would be easier to retire than "SHALL".
 
 ## MAY and OPTIONAL
 
-A "MAY" or "OPTIONAL" defines optional behaviour.
+A "MAY" or "OPTIONAL" define optional behaviour.
 
-On the face of it, this might seem necessary.
+On the face of it, these might seem necessary.
 In defining interoperability,
-every "MAY" for one actor
-is a "MUST" for every other actor.
+every option that one actor might exercise
+requires every other actor to support that choice.
+That is, every "MAY" for one is a "MUST" for others.
+
 For instance, if a field in a message is optionally present,
-every recipient of that message MUST tolerate its presence or absence equally.
+every recipient of that message has to tolerate its presence or absence equally.
 It is therefore more precise to define requirements in terms of the mandatory behaviour
 of participants other than the one that can exercise choice.
 
@@ -116,25 +124,27 @@ of participants other than the one that can exercise choice.
 
 Negations include "MUST NOT", "SHALL NOT", and "SHOULD NOT".
 The undefined and confusing "MAY NOT" appears in several RFCs as well,
-as recently as RFC 9783.
+more early in the series,
+but also as recently as RFC 9783.
 
 The inclusion of negations in key words is unnecessary.
 Saying "MUST not do X" is equally comprehensible
 to the shoutier "MUST NOT do X".
 
 It is often better to phrase such statements positively,
-avoiding the negation entirely.
+avoiding the use of negation entirely.
 By specifying the expected reaction of other protocol participants
-to a forbidden action,
-which might be to generate fatal errors,
+to a forbidden action --
+such as to mandate the generation of a fatal error --
 the prohibition is both more effective and more fully defined.
 
 
 # Weaselly Language
 
-"SHOULD" and its synonyms and antonyms,
+"SHOULD", its synonym "RECOMMENDED",
+and its antonym "SHOULD NOT",
 like the phrases from RFC 6919 {{?EXTRA=RFC6919}},
-is best avoided in protocol specifications.
+are best avoided in protocol specifications.
 
 The use of the term "SHOULD" is one of the most hotly debated
 and misused
