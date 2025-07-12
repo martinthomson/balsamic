@@ -69,7 +69,7 @@ Table of Contents
      2.1.  SHALL and REQUIRED
      2.2.  MAY and OPTIONAL
      2.3.  Negations
-   3.  Weaselly Language
+   3.  Ambiguous Language: SHOULD and RECOMMENDED
    4.  Security Considerations
    5.  IANA Considerations
    6.  References
@@ -154,7 +154,7 @@ Table of Contents
    mandate the generation of a fatal error -- the prohibition is both
    more effective and more fully defined.
 
-3.  Weaselly Language
+3.  Ambiguous Language: SHOULD and RECOMMENDED
 
    "SHOULD", its synonym "RECOMMENDED", and its antonym "SHOULD NOT",
    like the phrases from RFC 6919 [EXTRA], are best avoided in protocol
