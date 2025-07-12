@@ -1,0 +1,222 @@
+
+
+
+
+WG Working Group                                              Y. N. Here
+Internet-Draft                                                   Mozilla
+Intended status: Informational                              12 July 2025
+Expires: 13 January 2026
+
+
+          Simplified Language for Specifying Interoperability
+                  draft-todo-yourname-protocol-latest
+
+Abstract
+
+   TODO Abstract
+
+About This Document
+
+   This note is to be removed before publishing as an RFC.
+
+   The latest revision of this draft can be found at
+   https://example.com/LATEST.  Status information for this document may
+   be found at https://datatracker.ietf.org/doc/draft-todo-yourname-
+   protocol/.
+
+   Discussion of this document takes place on the WG Working Group
+   mailing list (mailto:WG@example.com), which is archived at
+   https://example.com/WG.
+
+   Source for this draft and an issue tracker can be found at
+   https://github.com/USER/REPO.
+
+Status of This Memo
+
+   This Internet-Draft is submitted in full conformance with the
+   provisions of BCP 78 and BCP 79.
+
+   Internet-Drafts are working documents of the Internet Engineering
+   Task Force (IETF).  Note that other groups may also distribute
+   working documents as Internet-Drafts.  The list of current Internet-
+   Drafts is at https://datatracker.ietf.org/drafts/current/.
+
+   Internet-Drafts are draft documents valid for a maximum of six months
+   and may be updated, replaced, or obsoleted by other documents at any
+   time.  It is inappropriate to use Internet-Drafts as reference
+   material or to cite them other than as "work in progress."
+
+   This Internet-Draft will expire on 13 January 2026.
+
+Copyright Notice
+
+   Copyright (c) 2025 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to BCP 78 and the IETF Trust's Legal
+   Provisions Relating to IETF Documents (https://trustee.ietf.org/
+   license-info) in effect on the date of publication of this document.
+   Please review these documents carefully, as they describe your rights
+   and restrictions with respect to this document.  Code Components
+   extracted from this document must include Revised BSD License text as
+   described in Section 4.e of the Trust Legal Provisions and are
+   provided without warranty as described in the Revised BSD License.
+
+Table of Contents
+
+   1.  Introduction
+   2.  Redundant Keywords
+     2.1.  SHALL
+     2.2.  REQUIRED
+     2.3.  MAY and OPTIONAL
+     2.4.  Negations
+   3.  Weaselly Language
+   4.  Security Considerations
+   5.  IANA Considerations
+   6.  References
+     6.1.  Normative References
+     6.2.  Informative References
+   Acknowledgments
+   Author's Address
+
+1.  Introduction
+
+   The most cited RFC ever, RFC 2119 [BCP14], defines 10 key words --
+   phrases really -- for use in specifications.  THese key words have
+   formed the backbone of interoperable specifications in many fields,
+   not just the IETF.
+
+   These words and phrases represent part of the identity of the IETF.
+   The list is also unnecessarily long.  This note argues that a single
+   keyword suffices: "MUST".
+
+2.  Redundant Keywords
+
+   Most of the set of 10 key words or phrases used are strictly
+   redundant with the term "MUST".
+
+2.1.  SHALL
+
+   The term "SHALL" is defined to have the same definition as "MUST".
+   This term has never been favoured relative to "MUST".  Of the 803
+   documents published after RFC 9000, 644 of these cite BCP 14.  Of
+   these 644 documents, the word "MUST" appears 17,327 times, not
+   including the quote from BCP 14.  The word "SHALL" appears just 810
+   times.
+
+   This ratio (~21.4) is lower than for the RFCs between 2501 and 3000
+   (~8), which suggests a decline in the popularity of "SHALL".
+
+   As a perfect synonym of "MUST", it would be easy to stop using
+   "SHALL" entirely.
+
+2.2.  REQUIRED
+
+   The term "REQUIRED" is also defined to have the same meaning as
+   "MUST".  This word has become even less popular than "SHALL".  Though
+   usage in RFCs 2501 through 300 is almost the same as "SHALL", it
+   appears just 490 times in recent documents.
+
+   This word lends itself more to the use of passive voice, which has
+   gradually fallen out of favour in technical writing.  This would be
+   easier to retire than "SHALL".
+
+2.3.  MAY and OPTIONAL
+
+   A "MAY" or "OPTIONAL" defines optional behaviour.
+
+   On the face of it, this might seem necessary.  In defining
+   interoperability, every "MAY" for one actor is a "MUST" for every
+   other actor.  For instance, if a field in a message is optionally
+   present, every recipient of that message MUST tolerate its presence
+   or absence equally.  It is therefore more precise to define
+   requirements in terms of the mandatory behaviour of participants
+   other than the one that can exercise choice.
+
+2.4.  Negations
+
+   Negations include "MUST NOT", "SHALL NOT", and "SHOULD NOT".  The
+   undefined and confusing "MAY NOT" appears in several RFCs as well, as
+   recently as RFC 9783.
+
+   The inclusion of negations in key words is unnecessary.  Saying "MUST
+   not do X" is equally comprehensible to the shoutier "MUST NOT do X".
+
+   It is often better to phrase such statements positively, avoiding the
+   negation entirely.  By specifying the expected reaction of other
+   protocol participants to a forbidden action, which might be to
+   generate fatal errors, the prohibition is both more effective and
+   more fully defined.
+
+3.  Weaselly Language
+
+   "SHOULD" and its synonyms and antonyms, like the phrases from RFC
+   6919 [EXTRA], is best avoided in protocol specifications.
+
+   The use of the term "SHOULD" is one of the most hotly debated and
+   misused of the key words defined in BCP 14.  The IESG statement
+   clarifying key word usage [IESG-KW] takes special effort to identify
+   some of these inappropriate uses.
+
+   Use of "SHOULD" is almost always phrased in less ambiguous terms, by
+   defining the preferred behaviour, and the conditions where it is
+   acceptable to deviate from that practice.
+
+   In many cases, "SHOULD" is used to cover deliberate ambiguity in
+   specifications where agreement on specifics could not be reached.  A
+   commitment to stop using this language would also lead to better
+   specification discipline and more interoperable specifications; see
+   also [RFC9413].
+
+4.  Security Considerations
+
+   The security of protocols can critically depend on the precision of
+   the language used in specifications.
+
+5.  IANA Considerations
+
+   This document has no IANA actions.
+
+6.  References
+
+6.1.  Normative References
+
+   [BCP14]    Best Current Practice 14,
+              <https://www.rfc-editor.org/info/bcp14>.
+              At the time of writing, this BCP comprises the following:
+
+              Bradner, S., "Key words for use in RFCs to Indicate
+              Requirement Levels", BCP 14, RFC 2119,
+              DOI 10.17487/RFC2119, March 1997,
+              <https://www.rfc-editor.org/info/rfc2119>.
+
+              Leiba, B., "Ambiguity of Uppercase vs Lowercase in RFC
+              2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
+              May 2017, <https://www.rfc-editor.org/info/rfc8174>.
+
+6.2.  Informative References
+
+   [EXTRA]    Barnes, R., Kent, S., and E. Rescorla, "Further Key Words
+              for Use in RFCs to Indicate Requirement Levels", RFC 6919,
+              DOI 10.17487/RFC6919, April 2013,
+              <https://www.rfc-editor.org/rfc/rfc6919>.
+
+   [IESG-KW]  IESG, "IESG Statement on Clarifying the Use of BCP 14 Key
+              Words", 17 March 2025, <https://datatracker.ietf.org/doc/
+              statement-iesg-statement-on-clarifying-the-use-of-bcp-14-
+              key-words/>.
+
+   [RFC9413]  Thomson, M. and D. Schinazi, "Maintaining Robust
+              Protocols", RFC 9413, DOI 10.17487/RFC9413, June 2023,
+              <https://www.rfc-editor.org/rfc/rfc9413>.
+
+Acknowledgments
+
+   Stuart Cheshire made the observation that a "MAY" for one is a "MUST"
+   for others.
+
+Author's Address
+
+   Your Name Here
+   Mozilla
+   Email: your.email@example.com
