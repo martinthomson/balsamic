@@ -152,7 +152,7 @@ of the key words defined in BCP 14.
 The IESG statement clarifying key word usage {{IESG-KW}}
 takes special effort to identify some of these inappropriate uses.
 
-Use of "SHOULD" is almost always phrased in less ambiguous terms,
+Use of "SHOULD" is almost always better phrased in less ambiguous terms,
 by defining the preferred behaviour,
 and the conditions where it is acceptable to deviate from that practice.
 
