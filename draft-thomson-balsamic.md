@@ -83,7 +83,7 @@ Neither term has ever been favoured relative to "MUST".
 
 Of the 803 documents published after RFC 9000,
 644 of these cite BCP 14.
-Of these 644 documents,
+In those 644 documents,
 the word "MUST" appears 17,327 times,
 not including the quote from BCP 14.
 The word "SHALL" appears just 810 times.
