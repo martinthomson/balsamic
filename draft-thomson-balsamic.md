@@ -56,7 +56,7 @@ and can be discouraged.
 The most cited RFC ever, RFC 2119 {{!BCP14}},
 defines 10 key words -- phrases really --
 for use in specifications.
-THese key words have formed the backbone of interoperable specifications
+These key words have formed the backbone of interoperable specifications
 in many fields,
 not just the IETF.
 
