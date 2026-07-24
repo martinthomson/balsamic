@@ -4,9 +4,9 @@
 
 Network Working Group                                         M. Thomson
 Internet-Draft                                                   Mozilla
-Obsoletes: 2119, 8714 (if approved)                         12 July 2025
+Obsoletes: 2119, 8714 (if approved)                         24 July 2026
 Intended status: Informational                                          
-Expires: 13 January 2026
+Expires: 25 January 2027
 
 
           Simplified Language for Specifying Interoperability
@@ -46,11 +46,11 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 13 January 2026.
+   This Internet-Draft will expire on 25 January 2027.
 
 Copyright Notice
 
-   Copyright (c) 2025 IETF Trust and the persons identified as the
+   Copyright (c) 2026 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -81,7 +81,7 @@ Table of Contents
 1.  Introduction
 
    The most cited RFC ever, RFC 2119 [BCP14], defines 10 key words --
-   phrases really -- for use in specifications.  THese key words have
+   phrases really -- for use in specifications.  These key words have
    formed the backbone of interoperable specifications in many fields,
    not just the IETF.
 
